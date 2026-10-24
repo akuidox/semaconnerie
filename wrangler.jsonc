@@ -1,0 +1,11 @@
+// Configuration Cloudflare : site 100 % statique, aucun code serveur.
+{
+  "name": "semaconnerie",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    // Seul ce dossier est publié
+    "directory": "./public",
+    // Affiche 404.html quand une page n'existe pas
+    "not_found_handling": "404-page"
+  }
+}
