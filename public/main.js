@@ -1,5 +1,5 @@
-// Photo manquante : on masque l'icône d'image brisée (le cadre garde son motif)
-document.querySelectorAll('.hex-in img, .shot img').forEach((img) => {
+// Photo manquante : on masque l'icône d'image brisée
+document.querySelectorAll('.shot img').forEach((img) => {
   const hide = () => img.classList.add('missing');
   if (img.complete && img.naturalWidth === 0) hide();
   else img.addEventListener('error', hide);

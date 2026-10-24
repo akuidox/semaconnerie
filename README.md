@@ -4,7 +4,7 @@ Site une page en HTML/CSS/JS pur, sans dépendances ni étape de build, déploy�
 
 ## Mise en ligne
 
-1. **Photos** : ajoutez les 8 réalisations dans `public/assets/img/` (voir `ASSETS.md`).
+1. **Photos** : déjà incluses dans `public/assets/img/` (voir `ASSETS.md` pour les remplacer).
 2. **Formulaire** : créez une clé gratuite sur https://web3forms.com avec l'adresse qui doit recevoir les demandes (info@semaconnerie.com). Remplacez `VOTRE_CLE_WEB3FORMS` dans `public/index.html`.
 3. **Cloudflare** : Workers & Pages → Créer → Importer un repo → `semaconnerie`.
    - Nom du projet : `semaconnerie`
