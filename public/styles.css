@@ -75,7 +75,13 @@ a { color: inherit; }
   --shape: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
   clip-path: var(--shape); background: var(--black); padding: var(--edge);
 }
-.hex img { clip-path: var(--shape); width: 100%; aspect-ratio: 400 / 516; object-fit: cover; }
+.hex-in {
+  clip-path: var(--shape); aspect-ratio: 400 / 516;
+  /* Mur de briques pâle, visible tant que la photo n'est pas là */
+  background: var(--grey-100) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='40'%3E%3Cpath d='M0 1.5H80M0 21.5H80M1.5 0V20M41.5 20V40' stroke='%23d4d2d6' stroke-width='3'/%3E%3C/svg%3E") center / 64px 32px;
+}
+.hex-in img { width: 100%; height: 100%; object-fit: cover; }
+.hex-in img.missing, .shot img.missing { visibility: hidden; }
 /* La brique jaune se pose au chargement, comme dans le logo */
 .ybrick {
   position: absolute; left: -12%; top: 44%; width: 38%; aspect-ratio: 2.1 / 1;
