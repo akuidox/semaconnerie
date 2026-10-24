@@ -132,41 +132,23 @@
 
     <!-- Contact -->
     <section id="contact" class="section" aria-labelledby="contact-titre">
-      <div class="wrap contact-inner">
-        <div class="contact-info">
-          <h2 id="contact-titre" class="title">Contactez-nous</h2>
-          <p>Décrivez votre projet&nbsp;: type de bâtiment, matériaux, échéancier. Nous vous revenons avec une soumission.</p>
-          <a class="contact-phone" href="tel:+15148945919">514 894-5919</a>
-          <dl class="coords">
-            <dt>Courriel</dt>
-            <dd><a href="mailto:info@semaconnerie.com">info@semaconnerie.com</a></dd>
-            <dt>Adresse</dt>
-            <dd>S.E. Maçonnerie inc.<br>1990 rue Jean-Pierre<br>Repentigny (Québec) J5Z 0C3</dd>
-          </dl>
-        </div>
-
-        <form class="form" data-form data-phone="514 894-5919" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="VOTRE_CLE_WEB3FORMS">
-          <input type="hidden" name="subject" value="Demande de soumission, semaconnerie.com">
-          <input type="hidden" name="from_name" value="Site S.E. Maçonnerie">
-          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <div class="form-row">
-            <label>Nom
-              <input type="text" name="name" required autocomplete="name">
-            </label>
-            <label>Téléphone
-              <input type="tel" name="phone" autocomplete="tel" inputmode="tel">
-            </label>
+      <div class="wrap">
+        <h2 id="contact-titre" class="title">Contactez-nous</h2>
+        <p class="contact-lead">Décrivez votre projet&nbsp;: type de bâtiment, matériaux, échéancier. Nous vous revenons avec une soumission.</p>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <h3>Téléphone</h3>
+            <a class="contact-big" href="tel:+15148945919">514 894-5919</a>
           </div>
-          <label>Courriel
-            <input type="email" name="email" required autocomplete="email">
-          </label>
-          <label>Votre projet
-            <textarea name="message" rows="5" required></textarea>
-          </label>
-          <button class="btn btn-yellow btn-lg" type="submit">Envoyer ma demande</button>
-          <p class="form-status" role="status" aria-live="polite"></p>
-        </form>
+          <div class="contact-item">
+            <h3>Courriel</h3>
+            <a class="contact-big contact-mail" href="mailto:info@semaconnerie.com?subject=Demande%20de%20soumission">info@semaconnerie.com</a>
+          </div>
+          <div class="contact-item">
+            <h3>Adresse</h3>
+            <p>S.E. Maçonnerie inc.<br>1990 rue Jean-Pierre<br>Repentigny (Québec) J5Z 0C3</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
